@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* #region 01 Basic */
+
+html {
+  background-color: #f8f8f8;
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #3f3f3f;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #8cd1a8;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  border-bottom-color: transparent;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #8cd1a8;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+}
+
+a:active {
+  text-decoration: none;
+  color: #69a581;
+}
+
+a:visited {
+  color: #aaddbe;
+  text-decoration: none;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+p {
+  margin: 0 0 20px 0;
+  line-height: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Abril Fatface", Georgia, serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+/* #endregion */
+
+/* #region 02 Container */
+
+.container {
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.container .hero {
+  max-width: max-content;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0 10%;
+  background-image: url("/assets/img/hero-bg.jpg") !important;
+  image-orientation: flip;
+}
+
+/* #endregion */
+
+/* #region 03 Header */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center center;
+}
+
+.logo img {
+  width: 20%;
+  height: 20%;
+  margin: 10px auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+}
+
+/* #endregion */
+
+/* #region 04 Gallery */
+
+.container .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* #endregion */
